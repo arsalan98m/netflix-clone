@@ -1,0 +1,37 @@
+.plans > p {
+  color: #fff;
+}
+
+.plans__singlePlan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  opacity: 0.6;
+}
+
+.plans__singlePlan:hover {
+  opacity: 1;
+}
+
+.plans__singlePlan h5,
+.plans__singlePlan h6 {
+  margin-bottom: 0;
+}
+
+.plans__singlePlan button {
+  cursor: pointer;
+  background-color: #e50914;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.plans__singlePlan--disabled {
+  opacity: 1;
+}
+
+.plans__singlePlan--disabled button {
+  background-color: gray;
+}

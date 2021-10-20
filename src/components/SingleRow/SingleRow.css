@@ -1,0 +1,46 @@
+.singlerow {
+  /* border: 2px solid red; */
+  overflow: hidden;
+  /* padding: 2rem 0; */
+  /* margin: 1rem 0; */
+}
+
+.singlerow__title {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+
+.slick-arrow {
+  color: #f40612;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.singlerow:hover .slick-arrow {
+  opacity: 1;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  display: none;
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+  color: #fff;
+}
+
+.slick-next:hover,
+.slick-next:focus {
+  color: #fff;
+}
+
+@media screen and (min-width: 920px) {
+  .singlerow {
+    overflow: visible;
+  }
+  .singlerow__title {
+    font-size: 1.6rem;
+  }
+}

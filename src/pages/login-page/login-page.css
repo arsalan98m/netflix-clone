@@ -1,0 +1,225 @@
+.loginpage__background {
+  position: relative;
+  min-height: 100vh;
+  background: url('../../assests/images/login-background.jpg') center/cover
+    no-repeat;
+  z-index: 0;
+}
+
+.loginpage__background::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  z-index: -1;
+}
+
+.loginpage__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  z-index: 3;
+}
+
+.loginpage__logo {
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.loginpage__button {
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: none;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 2px;
+}
+
+.loginpage__backgroundContent {
+  z-index: 3;
+  color: #fff;
+
+  height: calc(100vh - 59.7px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginpage__backgroundContent h1 {
+  max-width: 640px;
+  font-size: 1.75rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.loginpage__backgroundContent h2 {
+  font-size: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.loginpage__backgroundContent h3 {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.loginpage__backgroundInput {
+  width: 90%;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.loginpage__backgroundInput
+  .css-au3a9q-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: gray;
+  border: none !important;
+  outline: none !important;
+}
+
+.loginpage__backgroundInput .MuiFormControl-root {
+  width: 100% !important;
+}
+
+.loginpage__backgroundInput .MuiFilledInput-root::after {
+  border-bottom: 0 !important;
+}
+
+.loginpage__backgroundInput input {
+  background-color: #fff;
+  color: #000 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.loginpage__backgroundInput input::placeholder {
+  color: lightgray;
+}
+
+.loginpage__backgroundInput button {
+  background-color: #e50914;
+  color: #fff;
+  border-radius: 0;
+  outline: 0;
+  border-color: transparent;
+  font-weight: bold;
+  margin: 1rem auto;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginpage__backgroundInput button .MuiSvgIcon-root {
+  font-size: 0.75rem !important;
+  margin-left: 0.25rem !important;
+}
+
+.loginpage__mainBody {
+  background-color: #000;
+}
+
+.loginpage__mainBody :nth-child(n + 2):nth-last-child(n + 2) {
+  border: 0;
+}
+
+.loginpage__mainBody :nth-child(n + 3):nth-last-child(n + 2) {
+  border-top: 8px solid #222;
+}
+
+.loginpage__faq {
+  background-color: #000;
+  padding: 2rem 0;
+  border-bottom: 8px solid #222;
+}
+
+.loginpage__faqTitle {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.loginpage__faqTitle h2 {
+  font-size: 1rem;
+}
+
+.loginpage__bottom h2 {
+  font-size: 0.75rem;
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.loginpage__bottom .loginpage__backgroundInput {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 720px) {
+  .loginpage__backgroundContent h1 {
+    font-size: 4rem;
+    max-width: 800px;
+  }
+  .loginpage__backgroundContent h2 {
+    font-size: 1.625rem;
+    margin: 2rem auto;
+  }
+  .loginpage__backgroundContent h3 {
+    max-width: none;
+    font-size: 1rem;
+  }
+
+  .loginpage__faqTitle h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .loginpage__backgroundInput {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  .loginpage__backgroundInput button {
+    padding: 1.04rem 1rem;
+    width: 40%;
+    font-size: 1.2rem;
+  }
+
+  .loginpage__bottom .loginpage__backgroundInput {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .loginpage__backgroundInput button {
+    font-size: 1.2rem;
+  }
+  .loginpage__backgroundInput button .MuiSvgIcon-root {
+    font-size: 1rem !important;
+  }
+
+  .loginpage__bottom .loginpage__backgroundInput {
+    width: 50%;
+  }
+}

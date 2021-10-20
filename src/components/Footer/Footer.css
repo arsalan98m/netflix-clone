@@ -1,0 +1,39 @@
+.footer {
+  padding: 2rem 0;
+  background-color: #000;
+}
+.footer__title h2 {
+  color: #757575;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.footer__container div {
+  padding: 1rem 0;
+}
+.footer__container div a {
+  display: block;
+  color: #757575;
+  padding: 0.25rem 0;
+}
+
+.footer__container div a:hover {
+  text-decoration: underline;
+}
+
+.footer h4 {
+  color: #757575;
+  padding: 1rem 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__container div {
+    padding: 0;
+  }
+}

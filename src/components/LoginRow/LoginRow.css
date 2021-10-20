@@ -1,0 +1,39 @@
+.loginrow {
+  border-top: 8px solid #222;
+  border-bottom: 8px solid #222;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.loginrow__left h1 {
+  font-size: 1.6rem;
+  max-width: 320px;
+  margin: 0.75rem auto;
+  text-align: center;
+}
+.loginrow__left p {
+  color: #fff;
+}
+
+.loginrow__right img {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .loginrow__center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .loginrow__left h1 {
+    font-size: 2rem;
+    text-align: left;
+    max-width: 680px;
+  }
+
+  .loginrow__left p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}
